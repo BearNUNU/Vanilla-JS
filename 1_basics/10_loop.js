@@ -65,3 +65,41 @@ do {
     "먼저 한번 실행하고 나서 조건을 판단한다는 점, 실무에서 별로 사용하지않는 부분이다"
   )
 } while (number3 <= 10)
+
+/**
+ * break
+ *
+ */
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break
+  }
+  console.log(i)
+}
+let number2 = 0
+while (number2 < 10) {
+  if (number2 === 5) {
+    break
+  }
+  number2++
+  console.log(number2) //4에서는 브레이크가 걸리지않아서 5까지 출력된다
+}
+
+/**
+ * continue
+ */
+for (let c = 0; c < 10; c++) {
+  if (c === 5) {
+    continue
+  }
+  console.log(c) //c 가 5가 되면 스킵을 하고 4 다음 6이 나오게됨
+}
+
+while (number2 < 10) {
+  if (number2 === 5) {
+    continue
+  }
+  number2++
+  console.log(number2)
+}
